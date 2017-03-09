@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="titlescreen.css">
+	</head>
+	<body>
+		<div id="main">
+			<div id="title">
+			</div>
+			<div id="ship">
+			</div>
+			<div id="rules">
+				<a href='#openModal'><img src="Instructions.png" id="Instructions"></a>
+			</div>
+			<form id='menu' action='play.html' method='GET'>
+				<input src="Start.png" id="start" type="image" value="Submit">
+					<img src="Difficulty.png" id="Difficulty">
+					<select name="diff" src="Difficulty.png" type="image" id="DifficultyEntr">
+						<option value='1'>Very Easy</option>
+						<option value='2'>Easy</option>
+						<option value='3'>Normal</option>
+						<option value='4'>Hard</option>
+						<option value='5'>Very Hard</option>
+					</select>
+					<img src="Name.png" id="Name">
+				<input type='text' id='NameEntr' name='name' value=''>
+			</form>
+			<div id="openModal" class="modalDialog">
+				<div>	
+					<a href="#close" title="Close" class="close">X</a>
+					<h2>Instructions</h2>
+					<video controls>
+						<source src='demo.mp4' type='video/mp4'>
+					</video>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

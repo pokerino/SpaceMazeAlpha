@@ -1,0 +1,83 @@
+@keyframes animatedBackground {
+	0% { background-position: 1366px 0; }
+	100% { background-position: 0 0; }
+}
+body{
+	background-color: black;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#board{
+	height: 600px;
+	width: 800px;
+	background-color: gray;
+	border: 2px solid black; 
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+	background-image: url("background.jpg");
+	animation: animatedBackground 160s linear infinite;
+}
+#status{
+	background-color:black;
+	color:lawngreen;
+	height: 300px;
+	width: 200px;
+	border: 2px solid black; 
+	position: absolute;
+	left: 850px;
+	top: 10px;
+}
+#marker{
+    background-color: rgba(255,0,0,0.5);
+    height:50px;
+    width:50px;
+    position: relative;
+    top:460px;
+    left:750px;
+}
+#goal{
+	background-color: rgba(0,0,0,0);
+	height:2px;
+	width:2px;
+	position: absolute;
+	top:24px;
+	left:24px;
+}
+#player{
+    background:rgba(0,0,0,0);
+    height:90px;
+    width:90px;
+    position: relative;
+    top:-20px;
+    left:-20px;
+}
+#playerShip{
+	background:rgba(0,0,0,0);
+	height:50px;
+	width:50px;
+	position: absolute;
+	top:20px;
+	left:20px;
+}
+#playerCore{
+	background: rgba(0,0,0,0);
+	height:10px;
+	width:10px;
+	position: absolute;
+	top:20px;
+	left:20px;
+}
+#avatar{
+	top:0px;
+	left:0px;
+	position: relative;
+}
+#shield{
+	top:-52px;
+	left:-2px;
+	position: relative;
+}
+.wall{
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+}
